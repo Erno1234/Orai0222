@@ -16,7 +16,7 @@ public class Orai0222 {
         
         szoveg = String.format("%d + %d + %d + %d = %d\n", a, b,a,b, a + b + a + b);
         kiiras(szoveg);
-        szoveg = String.format("%d + %d + %d= %f\n",a,b,a, gyok);
+        
         kiiras(szoveg);
     }
     
@@ -38,12 +38,14 @@ public class Orai0222 {
 
     private static void gyok() {
         int osszeg = elso10SzamOsszege();
-        osszeg = Math.sqrt(osszead(2, osszead(3,4))); 
-        double gyok = Math.sqrt(osszeg);
+        osszeg =(int) Math.sqrt(osszead(2, osszead(3,4))); 
+        kiiras("2+3+4 gyoke="+osszeg+"\n");
     }
 
     private static void feladatok() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        elso10SzamOsszege();
+        osszead();
+        gyok();
     }
     
     
