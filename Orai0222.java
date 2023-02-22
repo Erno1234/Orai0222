@@ -12,13 +12,11 @@ public class Orai0222 {
         
         int a = 5;
         int b = 22;
-        int c = 3;
-        int d = 6;
-        int gyok = a+b+c;
-        osszeg = osszead(a, b, c, d); 
-        szoveg = String.format("%d + %d + %d + %d = %d\n", a, b,c,d, a + b + c + d);
+        osszeg = osszead(a, b); 
+        double gyok = Math.sqrt(a+b+a);
+        szoveg = String.format("%d + %d + %d + %d = %d\n", a, b,a,b, a + b + a + b);
         kiiras(szoveg);
-        szoveg = String.format("%d + %d + %d= %d\n",a,b,c, (Math.sqrt(gyok)));
+        szoveg = String.format("%d + %d + %d= %f\n",a,b,a, gyok);
         kiiras(szoveg);
         
     }
@@ -31,8 +29,8 @@ public class Orai0222 {
         return osszeg;
     }
 
-    private static int osszead(int a, int b, int c, int d) {
-        return a+b+c+d;
+    private static int osszead(int a, int b) {
+        return a+b;
     }
 
     private static void kiiras(String eredmeny) {
