@@ -12,17 +12,15 @@ public class Equalizer {
     }
 
     private static void eq(int szam){
-        int velsz = rand.nextInt(3,8);
-        if (szam > 0){
-            for (int i = 0; i <= szam; i++) {
-                System.out.print("\u001B[45m" + " "); 
-            }
-        }else{
-            for (int i = 0; i <= velsz; i++) {
-                System.out.print("\u001B[45m" + " ");
-            }
-        System.out.print(" ");
+        for (int i = 0; i <= szam; i++) {
+            System.out.print("\u001B[45m" + " "); 
         }
+        System.out.print(" ");
+    }
+    
+    private static void eq(){
+       int velsz = rand.nextInt(3,8);
+       eq(velsz);
     }
 
     private static void otSor() {
