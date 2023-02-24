@@ -44,7 +44,7 @@ public class Orai0222 {
 
     private static void feladatok() {
         elso10SzamOsszege();
-        osszead();
+        //osszead();
         gyok();
     }
     
