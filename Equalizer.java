@@ -22,12 +22,16 @@ public class Equalizer {
        int velsz = rand.nextInt(3,8);
        eq(velsz);
     }
-
+    private static void eq(boolean ertek){
+        if (ertek == true){
+            eq();
+        }
+    }
     private static void otSor() {
        eq(12);
+       eq(8, true);
        eq();
-       eq();
-       eq();
+       eq(false);
        eq();
        
     }
